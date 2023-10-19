@@ -1,0 +1,20 @@
+<!-- templates/webpage.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Climate App Web Page</title>
+</head>
+<body>
+    <h1>Welcome to the Climate App Web Page</h1>
+
+    <!-- Add buttons to access the Flask routes -->
+    <button onclick="window.location.href='/api/v1.0/precipitation'">Precipitation Route</button>
+    <button onclick="window.location.href='/api/v1.0/stations'">Stations Route</button>
+    <button onclick="window.location.href='/api/v1.0/tobs'">TOBS Route</button>
+    <button onclick="window.location.href='/api/v1.0/2017-04-01'">Start Date Route</button>
+    <button onclick="window.location.href='/api/v1.0/2017-04-01/2017-04-30'">Start-End Date Route</button>
+
+    <!-- Include your JavaScript file using url_for -->
+    <!-- <script src="{{ url_for('static', filename='script.js') }}"></script> -->
+</body>
+</html>
